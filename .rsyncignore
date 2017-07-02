@@ -1,0 +1,12 @@
+.gitignore
+.rsyncignore
+.git
+.DS_Store
+.idea
+__pycache__
+
+sync.sh
+videos
+tests
+data_tmp
+data_test

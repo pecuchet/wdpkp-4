@@ -30,3 +30,6 @@ Every day a video is automatically generated based on the above passage from the
 ### (debug) settings
 
 * /wdpkp/settings.py
+
+### license
+GPL-3.0

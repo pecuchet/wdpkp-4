@@ -23,7 +23,8 @@ URL_BLACKLIST_1 = '(keepcalm-o-matic)|(i\.klip\.in)|(2\.bp\.blogspot\.com)|(1\.b
 URL_BLACKLIST_2 = '|(ourjourneywithgod\.files\.wordpress)|(heartbeatinternational\.org)|(webneel\.com)|(catziac\.files\.wordpress)|(thechive\.files\.wordpress)|(images\.fineartamerica)|(awschrick\.files\.wordpress)|(womenshealthmag\.com)|(gronemberger\.com)|(4\.bp\.blogspot\.com)|(ichef\.bbci\.co\.uk)|(workthedream\.files\.wordpress)|(katerinamichouli\.files\.wordpress)|(rickeyorg-rickeyllc\.netdna-ssl)|(colourbox\.com)|(poker52\.fr)'
 URL_BLACKLIST_3 = '|(lastoneminute\.com)|(i165\.photobucket\.com)|(media\.npr\.org)|(hdwallpapers2013\.com)|(roshnii179\.files\.wordpress\.com)|(pageone\.ng)|(3\.bp\.blogspot\.com)|(successyeti\.com)|(sarassecret\.com)|(pd4pic\.com)|(carriemunderwood\.com)|(hdwallpapers\.in)|(static\.srcdn\.com)|(comealivein365\.com)|(3upg5n1ajpdonqkkp34tcif1-wpengine\.netdna-ssl\.com)|(2static\.fjcdn\.com)|(dvanime\.narod\.ru)'
 URL_BLACKLIST_4 = '|(gamba\.fm)|(adamackbeats\.com)|(contentbuket\.com)|(impawards\.com)|(img\.picturequotes\.com)|(nsullivandesign\.com)|(withersthomas\.co\.uk)|(thehilljean\.com)|(vegankicks\.com)|(lolsnaps\.com)|(image\.slidesharecdn\.com)|(kateswaffer\.files\.wordpress)'
-URL_BLACKLIST = URL_BLACKLIST_1 + URL_BLACKLIST_2 + URL_BLACKLIST_3 + URL_BLACKLIST_4
+URL_BLACKLIST_5 = '|(68\.media\.tumblr\.com)|(jpteenpics\.com)'
+URL_BLACKLIST = URL_BLACKLIST_1 + URL_BLACKLIST_2 + URL_BLACKLIST_3 + URL_BLACKLIST_4 + URL_BLACKLIST_5
 
 # VARIABLES
 #

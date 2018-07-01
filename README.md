@@ -2,6 +2,7 @@
 
 Repository for the media art project [whydopeoplekeepphotographs.net](http://whydopeoplekeepphotographs.net) (v4) 
 by [Tessa Groenewoud](http://tessagroenewoud.nl).  
+<br><br>
 
 “Why do people keep photographs?”  
 &nbsp;“Why? Goodness knows! Why do people keep things —  
@@ -11,7 +12,8 @@ it!”
 Some people throw everything away as soon as they have  
 done with it. That, yes, it is a matter of temperament. But  
 I speak now especially of photographs. Why do people keep,  
-in particular, photographs?”
+in particular, photographs?”  
+<br><br>
 
 Every day a video is automatically generated based on the above passage from the crime novel ‘Mrs. McGinty’s Dead’ (1952) by Agatha Christie.
  Each word from the fragment is used to select the day’s highest ranking image result in the search engines of Bing, Google or Yahoo.  

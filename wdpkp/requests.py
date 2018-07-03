@@ -6,9 +6,11 @@ import importlib
 from wdpkp import settings
 from wdpkp.utils import log
 
+# 'wdpkp.controllers.yahoo', yahoo BOSS API is out of service as of 15/05/2018
+
 controllers = list(
     map(importlib.import_module,
-        ['wdpkp.controllers.bing', 'wdpkp.controllers.google', 'wdpkp.controllers.yahoo', 'wdpkp.controllers.tessa'])
+        ['wdpkp.controllers.bing', 'wdpkp.controllers.google', 'wdpkp.controllers.tessa'])
 )
 
 times_relaunched = 0

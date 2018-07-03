@@ -1,6 +1,7 @@
 from urllib import parse as parselib
+
+import os
 from wdpkp import settings
-from wdpkp.controllers import keys
 
 ENDPOINT_V5 = "https://api.cognitive.microsoft.com/bing/v5.0/images/search"
 TEST_DATA_V5 = "bing.json"
@@ -12,7 +13,7 @@ def get_http_headers():
     :return: dict request header
     """
     return {
-        'Ocp-Apim-Subscription-Key': keys.BING
+        'Ocp-Apim-Subscription-Key': os.getenv("BING")
     }
 
 

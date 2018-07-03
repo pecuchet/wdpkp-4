@@ -15,7 +15,7 @@ def get_command():
     :return:
     """
     if settings.DEBUG == 0:
-        return '/root/bin/ffmpeg -hide_banner -loglevel quiet '
+        return settings.FFMPEG + ' -hide_banner -loglevel quiet '
     else:
         return 'ffmpeg -hide_banner '
 

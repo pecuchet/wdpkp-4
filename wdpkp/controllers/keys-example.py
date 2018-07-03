@@ -1,7 +1,0 @@
-BING = ""
-GOOGLE_CX = ""
-GOOGLE_KEY = ""
-YAHOO_KEY = ""
-YAHOO_SECRET = ""
-TESSA_DATA_URL = ""
-EXPORT_SCP_DIR = ""

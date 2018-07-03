@@ -1,0 +1,2 @@
+0 4 * * * cd /home/wdpkp && /usr/local/bin/python main.py
+0 5 * * * cd /home/wdpkp && /usr/local/bin/python check.py

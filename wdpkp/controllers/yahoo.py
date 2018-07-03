@@ -1,9 +1,10 @@
-import urllib.parse
 import time
-import oauth2 as oauth
 
+import oauth2 as oauth
+import urllib.parse
+
+import os
 from wdpkp import settings
-from wdpkp.controllers import keys
 
 # @see universal api args : https://developer.yahoo.com/boss/search/boss_api_guide/api_spec.html
 # @see image service : https://developer.yahoo.com/boss/search/boss_api_guide/image.html
@@ -54,7 +55,7 @@ def get_url(query):
 
     if not settings.DEBUG:
         param = get_args(query)
-        consumer = oauth.Consumer(key=keys.YAHOO_KEY, secret=keys.YAHOO_SECRET)
+        consumer = oauth.Consumer(key=os.getenv("YAHOO_KEY"), secret=os.getenv("YAHOO_SECRET"))
         signature_method = oauth.SignatureMethod_HMAC_SHA1()
         req = oauth.Request(method="GET", url=ENDPOINT, parameters=param)
         req.sign_request(signature_method, consumer, None)

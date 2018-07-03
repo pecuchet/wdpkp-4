@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 """
 Why do people keep photographs?
 Every command is launched sequentially from here.

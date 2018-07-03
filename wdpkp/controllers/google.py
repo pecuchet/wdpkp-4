@@ -1,7 +1,7 @@
 import urllib.parse
 
+import os
 from wdpkp import settings
-from wdpkp.controllers import keys
 
 NAME = "google"
 ENDPOINT = "https://www.googleapis.com/customsearch/v1"
@@ -28,8 +28,8 @@ def get_url(query):
     if not settings.DEBUG:
         return (ENDPOINT
                 + '?q=' + urllib.parse.quote_plus(query)
-                + '&cx=' + urllib.parse.quote_plus(keys.GOOGLE_CX)
-                + '&key=' + urllib.parse.quote_plus(keys.GOOGLE_KEY)
+                + '&cx=' + urllib.parse.quote_plus(os.getenv("GOOGLE_CX"))
+                + '&key=' + urllib.parse.quote_plus(os.getenv("GOOGLE_KEY"))
                 + '&googlehost=google.com'
                 + '&dateRestrict=d1'
                 + '&start=1'                    # index of the first result to return

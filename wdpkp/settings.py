@@ -36,6 +36,7 @@ DIR_VIDEO_DATE = DIR + '/videos/' + TODAY + '/'
 
 # EDITING
 #
+FFMPEG = '/usr/local/bin/ffmpeg'
 WIDTH = 1920
 HEIGHT = 1080
 TIME_CODES = DIR + '/assets/161024_wdpkp-timecodes.txt'

@@ -3,7 +3,8 @@ For certain words (why, do, keep, up, to, a, and, I, as, of, in)
 handpicked images by the artist may be requested.
 """
 from random import shuffle
-from wdpkp.controllers import keys
+
+import os
 
 
 def get_http_headers():
@@ -11,7 +12,7 @@ def get_http_headers():
 
 
 def get_url(query):
-    return keys.TESSA_DATA_URL
+    return os.getenv("TESSA_DATA_URL")
 
 
 def parse(response):

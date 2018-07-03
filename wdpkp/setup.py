@@ -3,9 +3,12 @@ import re
 
 from wdpkp import settings
 from wdpkp.utils import log
+from dotenv import load_dotenv
 
 
 def configure():
+    env_path = settings.DIR + '/.env'
+    load_dotenv(dotenv_path=env_path)
 
     os.mkdir(settings.DIR_DATA_DATE)
     os.mkdir(settings.DIR_VIDEO_DATE)
@@ -27,7 +30,6 @@ def get_words():
     dictionary = {}
 
     for i, word in enumerate(words):
-
         dictionary[i] = {
             'word': word,
             'punc': words_punc[i]

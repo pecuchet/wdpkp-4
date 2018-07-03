@@ -2,10 +2,7 @@
 .idea
 __pycache__
 
-wdpkp/controllers/keys.py
-wdpkp/utils/export.py
+.ssh
+.env
 sync.sh
 assets/fonts
-data_test
-data_tmp/*
-videos/*

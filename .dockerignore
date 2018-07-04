@@ -3,3 +3,5 @@
 .ssh
 .env-example
 .rsync-ignore
+videos
+data_tmp

@@ -40,10 +40,11 @@ Every day a video is automatically generated based on the above passage from Aga
 
 ```
 docker build -t tessagroenewoud/wdpkp:latest .
-docker run -d --name wdpkp --user wdpkp \
-  -v /host/dir/for/source/images:/home/wdpkp/data_tmp:rw \
-  -v /host/dir/for/rendered/videos:/home/wdpkp/videos:rw \
-  -v /host/.ssh:/home/wdpkp/.ssh:ro \
+docker run -d --name wdpkp \
+  --restart=always \
+  -v /host/dir/for/source/images:/root/wdpkp/data_tmp:rw \
+  -v /host/dir/for/rendered/videos:/root/wdpkp/videos:rw \
+  -v /host/.ssh:/root/.ssh:ro \
   tessagroenewoud/wdpkp
 ```
 

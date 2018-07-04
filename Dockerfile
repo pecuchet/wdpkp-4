@@ -36,15 +36,14 @@ RUN apk add --update \
   apk del build-base curl tar bzip2 x264 openssl nasm && rm -rf /var/cache/apk/*
 
 RUN pip install --no-cache-dir oauth2 python-dotenv \
-  && mkdir -p /home/wdpkp
+  && mkdir -p /root/wdpkp
 
-WORKDIR /home/wdpkp
+WORKDIR /root/wdpkp
 
 ADD . ./
 
 RUN chmod 755 ./docker-entry.sh ./main.py ./check.py \
   && /usr/bin/crontab ./crontabs.txt \
-  && adduser -D -u 1000 wdpkp \
   && mkdir ./.ssh
 
 CMD ["./docker-entry.sh"]

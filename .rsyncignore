@@ -7,9 +7,10 @@ __pycache__
 
 README.md
 LICENSE.txt
-keys-example.py
+.env-example
 sync.sh
 videos
 tests
 data_tmp
 data_test
+todo.md

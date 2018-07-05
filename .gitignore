@@ -5,3 +5,4 @@ __pycache__
 .ssh
 .env
 sync.sh
+todo.md

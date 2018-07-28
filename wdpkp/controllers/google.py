@@ -7,6 +7,7 @@ NAME = "google"
 ENDPOINT = "https://www.googleapis.com/customsearch/v1"
 TEST_DATA = "google.json"
 
+# @see https://developers.google.com/custom-search/json-api/v1/reference/cse/list
 # @example request URL
 # https://www.googleapis.com/customsearch/v1
 #       ?q=Why&cx=xxx&key=xxxx
@@ -37,7 +38,7 @@ def get_url(query):
                 + "&imgType=photo"
                 + "&imgColorType=color"         # mono, gray
                 + "&imgSize=xxlarge"            # icon, small, medium, large, xlarge, xxlarge, huge
-                + "&safe=off"                   # default
+                + "&safe=medium"                # off (default), medium, high
                 + "&fields=items(link)")        # partial response, e.g. items(image(byteSize,height,width),link,mime)
     else:
         return settings.DEBUG_BASE_URL + TEST_DATA

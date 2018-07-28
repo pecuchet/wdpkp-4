@@ -6,3 +6,4 @@ __pycache__
 .env
 sync.sh
 todo.md
+data_test

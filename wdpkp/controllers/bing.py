@@ -32,7 +32,7 @@ def get_url(query):
             + '&aspect=All'                     # Square, Wide, Tall, All
             + '&color=ColorOnly'                # Monochrome
             # + '&freshness=Day'                # Bing is very strict, loosen it
-            + '&safeSearch=Off'                 # is google's default (Moderate, Strict), default: Moderate
+            + '&safeSearch=Moderate'            # is google's default (Moderate, Strict), default: Moderate
             + '&imageType=Photo'
             # + '&modulesRequested=Annotations' # Collections (a list of related images)
                                                 # Annotations (characteristics of the type of content found)

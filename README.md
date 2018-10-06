@@ -28,7 +28,7 @@ Every day a video is automatically generated based on the above passage from Aga
 
 ### Tech info
 
-* Requires Python 3.4+
+* Requires Python 3.6.6
 * Python dependencies: oauth2, dotenv
 * Command-line dependencies: ffmpeg 3+, scp (OpenSSH)
 * Configure through ``.env`` and ``/wdpkp/settings.py`` files

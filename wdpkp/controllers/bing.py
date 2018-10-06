@@ -1,4 +1,4 @@
-from urllib import parse as parselib
+# from urllib import parse as parselib
 
 import os
 from wdpkp import settings
@@ -53,8 +53,12 @@ def parse(response):
         urls = []
 
         for item in data['value']:
-            url = parselib.parse_qs(item['contentUrl'].split('?')[1])
-            urls.append(url['r'][0])
+            urls.append(item['contentUrl'])
+            # Microsoft seems to have changed the format of the 'contentUrl' value
+            # before 14/09/2018 this was bing.com url with the image url encoded as a query parameter
+            # from 14/09 it returned the non-encoded image url
+            # url = parselib.parse_qs(item['contentUrl'].split('?')[0])
+            # urls.append(url['r'][0])
 
         return urls
 

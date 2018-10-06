@@ -1,7 +1,7 @@
 .DS_Store
 .idea
 __pycache__
-
+*.pyc
 .ssh
 .env
 sync.sh

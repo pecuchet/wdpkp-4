@@ -22,7 +22,7 @@ def get(url, word_idx):
         log.warning('Image request failed ' + str(e.reason) + ' ' + url)
         return False
     except OSError as e:
-        log.warning('Image request failed: ' + type(e).__name__ + ': ' + e.strerror + ' [' + str(e.errno) + '] ' + url)
+        log.warning('Image request failed: ' + type(e).__name__ + ': ' + str(e.strerror) + ' [' + str(e.errno) + '] ' + url)
         return False
 
     content_type = req.info()['Content-Type']

@@ -48,14 +48,17 @@ def _choose_controller(word):
     """
     global artists_words, artists_count
 
+    # default is not to use the last controller
+    rand_max = len(controllers) - 2
+
+    # allow to use the last controller
     if artists_count < 2 and (word in artists_words):
-        controller_num = len(controllers) - 1
-    else:
-        controller_num = len(controllers) - 2
+        rand_max = rand_max + 1
 
-    controller_id = random.randint(0, controller_num)
+    # random between 0-1 or 0-2
+    controller_id = random.randint(0, rand_max)
 
-    if controller_id is 3:
+    if controller_id is 2:
         artists_count += 1
 
     return controllers[controller_id]

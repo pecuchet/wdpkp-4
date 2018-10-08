@@ -21,6 +21,9 @@ def get(url, word_idx):
     except urllib.request.URLError as e:
         log.warning('Image request failed ' + str(e.reason) + ' ' + url)
         return False
+    except OSError as e:
+        log.warning('Image request failed: ' + type(e).__name__ + ': ' + e.strerror + ' [' + str(e.errno) + '] ' + url)
+        return False
 
     content_type = req.info()['Content-Type']
     extension = get_extension(content_type)

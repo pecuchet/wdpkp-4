@@ -5,3 +5,4 @@
 .rsync-ignore
 videos
 data_tmp
+data_test

@@ -58,7 +58,7 @@ def credit_screen(data):
     data = _credit_string_list(data)
     credits_total = len(data)
     count = -1
-    duration = 96
+    duration = 120
 
     cmd = ffmpeg.get_command()
     cmd += ' -f lavfi -i color=c=black:s=1920x1080:r=24:d=' + str(duration) + ' -vf "'
